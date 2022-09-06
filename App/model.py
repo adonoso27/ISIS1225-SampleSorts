@@ -242,7 +242,7 @@ def sortBooks(catalog, size):
     sorted_list = sa.sort(sub_list, compareratings)
     end_time = getTime()
     delta_time = deltaTime(start_time, end_time)
-    return delta_time
+    return sorted_list, delta_time
 
 
 # Funciones para medir tiempos de ejecucion
